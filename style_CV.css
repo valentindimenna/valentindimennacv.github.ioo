@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    p{
+    color:white;
+  }
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #070225;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: crosshair;
+    padding: 5px;
+  }
+  .container .box {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+  }
+  .container .box:hover .imgBox {
+    transform: translate(-1.5rem, -1.5rem);
+  }
+  .container .box:hover .content {
+    transform: translate(3.5rem, 3.5rem);
+  }
+  .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .imgBox img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+  }
+  
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+    align-items: flex-end;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .content h2 {
+    display: block;
+    font-size: 2rem;
+    color: #111;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .content span {
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .boton{
+    min-width: 120px;
+    background-color: white;
+    color:black;
+    border-radius: 24px;
+    display: block;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  .container2{
+    display: flex;
+    border: solid 3px white;
+    margin: 15px;
+    padding: 10px;
+  }
+  .hidden{
+    display: none;
+  }
+  .formulario{
+    text:white;
+
+  }
+  /**/
+  h1{
+    width: 500px;
+    padding: 1px;
+    text-align: center;
+}
+
+form {
+     display: flex; 
+    flex-direction: column; 
+    margin: 5px;
+    padding: 10px;
+    border:5px solid black;
+    width: 600px;
+    background-color: #070225;
+    color:white;
+    align-items: flex-start;
+    vertical-align: top;
+    
+}
+.mensaje {
+    
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    text-align: left;
+   vertical-align: top;
+   
+}
+ input::placeholder{
+    text-align: left;
+    direction: ltr;
+    position:absolute;
+}
+ input[type="text"]{
+    
+    text-align: left;
+    width:500px;
+    vertical-align: top;
+    text-align: initial;
+   
+}
+input[type="number"]{
+    width:500px;
+   
+}
